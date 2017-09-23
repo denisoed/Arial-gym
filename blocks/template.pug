@@ -1,0 +1,35 @@
+include _assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+include head/head
+
+doctype html
+html(lang="ru")
+
+	block head
+		head
+			+head({
+				"title": "Document",
+				"author": "Author name",
+				"description": "Workshop"
+			})
+			
+		+b.BODY.page
+			+e.DIV.wrap
+				block header
+					
+				block content
+					div content
+
+				block footer
+					footer footer
+				
+			block vendors
+				// build:js js/vendor.js
+				script( src="libs/jquery/dist/jquery.min.js")
+				// endbuild
+
+			block scripts
+				// build:js js/main.js
+				script( src="js/main.js")
+				// endbuild
