@@ -1,8 +1,8 @@
 $xxs: "(min-width: 320px)"
 $xs: "(min-width: 480px)"
-$sm: "(min-width: 767px)"
+$sm: "(min-width: 768px)"
 $_sm: "(max-width: 767px)"
-$md: "(min-width: 1024px)"
+$md: "(min-width: 992px)"
 $_md: "(max-width: 1024px)"
 $lg: "(min-width: 1200px)"
 $xlg: "(min-width: 1500px)"
@@ -34,5 +34,5 @@ $gutter: 40px
 
 =col($num)
   width: calc( (((100% - (#{$gutter} * (#{$cols} - 1))) / #{$cols}) * #{$num}) + ( #{$gutter} * (#{$num} - 1)) )
-  border-right: 1px dashed #000
-  border-left: 1px dashed #000
+  // border-right: 1px dashed #000
+  // border-left: 1px dashed #000

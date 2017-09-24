@@ -21,10 +21,12 @@ time, mark, audio, video
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section
-  display: block
+  display: block  
 
 body
   line-height: 1
+  background-color: #f4f6f8
+  position: relative
 
 ol, ul
   list-style: none
@@ -42,3 +44,29 @@ table
   border-spacing: 0
 a
   text-decoration: none
+p
+  margin: 0
+  padding: 0
+  line-height: 22px
+*
+	outline: 0 !important
+
+*::-webkit-input-placeholder
+  font:
+    size: 14px
+  opacity: 1
+
+*:-moz-placeholder
+  font:
+    size: 14px
+  opacity: 1
+
+*::-moz-placeholder
+  font:
+    size: 14px
+  opacity: 1
+
+*:-ms-input-placeholder
+  font:
+    size: 14px
+  opacity: 1

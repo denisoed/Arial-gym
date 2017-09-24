@@ -1,0 +1,31 @@
+mixin footer()
+  +b.FOOTER.footer
+    +e.DIV.container
+      +e.DIV.top-line
+        +b.DIV.footer-block
+          h5 Opening times
+          +e.DIV.opening_times
+            p Weekdays Monday - Friday <br> #[span 09:00 - 21:00]
+            p Weekdends Saturday - Sunday <br> #[span 11:00 - 20:00]
+        +b.DIV.footer-block
+          h5 Come find us
+          +e.DIV.come_find_us
+            p 12345 North Main Street
+            p New York, NY 555555
+            p Phone: #[span +999 888 777 666]
+            p Email: #[span example@example.com]
+        +b.DIV.footer-block
+          h5 Recent posts
+          +e.DIV.recent_post
+            p In ipsum diam egestas fermentum. <br> #[span 09:34 - 01.01.2017]
+            p In ipsum diam egestas fermentum. <br> #[span 09:55 - 03.01.2017]
+        +b.DIV.footer-block
+          h5 Sign up for updates
+          +e.DIV.sign_up_for_updates
+            form(action="#" method="#")
+              input(type="text" placeholder="email...")
+              button(type="submit") Sign up
+    +e.DIV.bottom-line
+      +b.DIV.copyright
+        p &copy; 2017 | Author Denisoed 
+    

@@ -1,29 +1,30 @@
 include _assets/bemto/bemto
 - set_bemto_settings({ modifier: "--" })
 
-include head/head
+include Blocks/head/head
+include Blocks/header/header-v1/header-v1
+include Blocks/footer/footer
 
 doctype html
-html(lang="ru")
+html(lang="en")
 
 	block head
 		head
 			+head({
-				"title": "Document",
-				"author": "Author name",
-				"description": "Workshop"
+				"title": "Arial gym",
+				"author": "Denisoed",
+				"description": "Arial gym"
 			})
 			
-		+b.BODY.page
+		+b.BODY.page(style="background-image: url('img/body-bg.jpg')")
 			+e.DIV.wrap
 				block header
+					+header-v1()
 					
 				block content
-					div content
 
 				block footer
-					footer footer
-				
+					+footer()
 			block vendors
 				// build:js js/vendor.js
 				script( src="libs/jquery/dist/jquery.min.js")

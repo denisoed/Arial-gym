@@ -1,0 +1,31 @@
+.top-line
+  width: 100%
+  min-height: 30px
+  background-color: $accent
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__container
+    +container()
+.contact-info
+  display: flex
+  align-items: center
+  min-height: 30px
+  h5
+    margin: 0
+    margin-right: 15px
+    color: $dark
+    font-size: 12px
+    font-family: $Segoe-black
+    line-height: 1.5
+.social-icons
+  display: flex
+  align-items: center
+  a
+    line-height: 30px
+    padding: 0 6px
+    color: $dark
+    transition: all 0.3s ease-in-out
+    &:hover
+      color: $white
+    .fa

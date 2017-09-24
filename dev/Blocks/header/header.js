@@ -1,4 +1,3 @@
-
 // Open Responsive main menu
 $('.btn-menu').on('click', function(){
   if( $('.main-menu_navbar').is(':hidden') == true ){
@@ -14,5 +13,3 @@ $('.btn-menu').on('click', function(){
 
   $('.btn-menu').toggleClass('btn-menu-active');
 });
-
-

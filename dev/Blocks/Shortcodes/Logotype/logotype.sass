@@ -1,0 +1,45 @@
+.logotype
+  display: flex
+  align-items: center
+  p
+    color: $white
+    border: 2px dashed $accent
+    border-radius: 100%
+    width: 50px
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    font-family: $Segoe-black
+    line-height: 14px
+    font-size: 18px
+    padding-left: 4px
+    position: relative
+    margin-right: 15px
+    background-color: rgba($accent, .05)
+    &::before
+      content: ''
+      position: absolute
+      width: 121%
+      height: 121%
+      top: -7px
+      left: -7px
+      border: 2px solid $accent
+      border-radius: 100%
+
+    span
+      color: $accent
+      font-size: 8px
+      margin-right: 4px
+  h4
+    color: $white
+    font-size: 12px
+    font-family: $Segoe-black
+    position: relative
+    line-height: 15px
+    span
+      font-family: $Segoe-bold
+      font-size: 11px
+      color: $accent
+      text-transform: uppercase
