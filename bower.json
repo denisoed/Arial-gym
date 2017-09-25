@@ -17,6 +17,7 @@
   "dependencies": {
     "mdi": "^1.9.33",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "owl.carousel": "owl-carousel2#^2.2.1"
   }
 }

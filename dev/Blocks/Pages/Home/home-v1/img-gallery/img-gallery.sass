@@ -1,0 +1,53 @@
+.img-gallery
+  padding: 50px 0
+  &__container
+    +container()
+
+.img-gallery-filter
+  &__btn
+    background-color: transparent
+    border: none
+    color: $white
+    font-family: $Segoe-bold
+    font-size: 16px
+    transition: all 0.2s ease
+    cursor: pointer
+  .active
+    color: $accent
+    font-family: $Segoe-black
+    font-size: 18px
+
+.img-gallery-images
+  display: flex
+  flex-wrap: wrap
+  margin-top: 15px
+  &__item
+    width: 31%
+    margin: 1%
+    display: none
+    float: left
+    position: relative
+    box-sizing: border-box
+    &:hover
+      a
+        .fa
+          opacity: 1
+          z-index: 1
+          font-size: 42px
+        img
+          transform: rotate(-1deg) scale(1.05)
+          box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5)
+    a
+      .fa
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        color: $accent
+        font-size: 12px
+        opacity: 0
+        transition: all .5s ease
+      img
+        width: 100%
+        height: auto
+        transition: all .4s ease

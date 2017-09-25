@@ -1,0 +1,13 @@
+include ../Logotype/logotype
+
+mixin subscribe()
+  +b.SECTION.subscribe
+    +e.DIV.container
+      +e.DIV.box
+        +b.DIV.logo_title
+          +logotype()
+          h2 Subscribe
+        +b.FORM.form(action="#", method="#")
+          +e.INPUT(type="text", placeholder="Email")
+          +e.BUTTON(type="submit") 
+            i.fa.fa-paper-plane-o

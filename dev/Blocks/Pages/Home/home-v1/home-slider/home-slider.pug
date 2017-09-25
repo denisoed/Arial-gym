@@ -1,2 +1,28 @@
 mixin home-slider()
-  h1 Home slider
+  +b.SECTION.home-slider
+  
+    //------HOME SLIDER--------//
+    +e.DIV.box(class="owl-carousel")
+    
+      //- Slide 1
+      +b.DIV.slider-slide(style="background-image: url('img/Slide.jpg')")
+        +e.DIV.content
+          h1.slide_content_title Your body is in your hands
+          p.slide_content_desc Free 30 days trial
+          a.slide_content_button(href="#") Get in try now
+      
+      //- Slide 2
+      +b.DIV.slider-slide(style="background-image: url('img/Slide2.jpg')")
+        +e.DIV.content
+          h1.slide_content_title Your body is in your hands
+          p.slide_content_desc Free 30 days trial
+          a.slide_content_button(href="#") Get in try now
+          
+      //- Slide 3
+      +b.DIV.slider-slide(style="background-image: url('img/Slide3.jpg')")
+        +e.DIV.content
+          h1.slide_content_title Your body is in your hands
+          p.slide_content_desc Free 30 days trial
+          a.slide_content_button(href="#") Get in try now
+      
+      

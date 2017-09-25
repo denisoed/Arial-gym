@@ -1,0 +1,72 @@
+include ../../../../Shortcodes/section-title/section-title
+
+mixin posts()
+  +b.SECTION.posts
+    +section-title('New from blog')
+    +e.DIV.container
+      +e.DIV.box
+        
+        //- Left post
+        +b.DIV.recent-post(class="post_left_position")
+          +e.IMG.img(src="img/post.jpg", alt="Image post")
+          +e.DIV.info
+            h4 Simple blog post
+            p.
+              In ipsum diam egestas fermentum. 
+              Praesent laoreet semper lectus In u
+              t ipsum ac diam egestas fermentum. 
+              Praesent laoreet semper lectus!
+            +b.DIV.posts-like_and_view
+              +e.DIV.like 
+                i.fa.fa-heart
+                p 8   
+              +e.A.view(href="#") View detail  
+                
+        //- Right post
+        +b.DIV.recent-post(class="post_right_position")
+          +e.IMG.img(src="img/post1.jpg", alt="Image post")
+          +e.DIV.info
+            h4 Simple blog post
+            p.
+              In ipsum diam egestas fermentum. 
+              Praesent laoreet semper lectus In u
+              t ipsum ac diam egestas fermentum. 
+              Praesent laoreet semper lectus!
+            +b.DIV.posts-like_and_view
+              +e.DIV.like
+                i.fa.fa-heart
+                p 2  
+              +e.A.view(href="#") View detail    
+        
+        //- Left post
+        +b.DIV.recent-post(class="post_left_position")
+          +e.IMG.img(src="img/post2.jpg", alt="Image post")
+          +e.DIV.info
+            h4 Simple blog post
+            p.
+              In ipsum diam egestas fermentum. 
+              Praesent laoreet semper lectus In u
+              t ipsum ac diam egestas fermentum. 
+              Praesent laoreet semper lectus!
+            +b.DIV.posts-like_and_view
+              +e.DIV.like 
+                i.fa.fa-heart
+                p 8   
+              +e.A.view(href="#") View detail  
+                
+        //- Right post
+        +b.DIV.recent-post(class="post_right_position")
+          +e.IMG.img(src="img/post3.jpg", alt="Image post")
+          +e.DIV.info
+            h4 Simple blog post
+            p.
+              In ipsum diam egestas fermentum. 
+              Praesent laoreet semper lectus In u
+              t ipsum ac diam egestas fermentum. 
+              Praesent laoreet semper lectus!
+            +b.DIV.posts-like_and_view
+              +e.DIV.like
+                i.fa.fa-heart
+                p 2  
+              +e.A.view(href="#") View detail    
+        +e.A.load-more(href="#") Load more...      

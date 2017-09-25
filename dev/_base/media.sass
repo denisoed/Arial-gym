@@ -2,7 +2,16 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.slider-slide
+		&__content
+			h1
+				width: 100%
+				font-size: 62px
+			p
+				font-size: 42px
+				margin-bottom: 10px
+			a
+				font-size: 16px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -30,8 +39,30 @@
 			.sign_up_for_updates
 				form
 					justify-content: flex-start
-	.footer-block
-	  +col(6)				
+
+	.slider-slide
+		&__content
+			h1
+				width: 100%
+				font-size: 54px
+			p
+				font-size: 32px
+				margin-bottom: 10px
+			a
+				font-size: 12px
+	.service
+		+col(12)
+
+	.posts
+		&__box
+			justify-content: center
+			.recent-post
+				width: 100%
+				flex-wrap: wrap
+				&__img
+					max-width: 370px
+					margin: 15px
+					box-shadow: 0px 0px 10px 0px rgba(0,0,0,1)		
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	header
@@ -39,15 +70,42 @@
 			.contact-info
 				flex-direction: column
 
-	.footer			
+	.footer
 		&__top-line
 			flex-direction: column
 			h5
 				margin-top: 30px
+	.slider-slide
+		&__content
+			h1
+				width: 100%
+				font-size: 32px
+			p
+				font-size: 22px
+			a
+				padding: 8px 10px
+				font-size: 10px
+	.img-gallery-images
+		&__item
+			width: 48%
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
+	.slider-slide
+		&__content
+			h1
+				width: 100%
+				font-size: 26px
+			p
+				font-size: 16px
+			a
+				padding: 2px 2px
+				font-size: 10px
+	.service
+		flex-direction: column
+		margin-bottom: 50px
+		p
+			margin-top: 30px
+			text-align: center
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

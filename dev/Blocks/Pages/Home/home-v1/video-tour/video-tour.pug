@@ -1,0 +1,9 @@
+include ../../../../Shortcodes/section-title/section-title
+
+mixin video-tour()
+  +b.SECTION.video-tour
+    +section-title("Video tour")
+    +e.DIV.container
+      +b.DIV.video-tour-box
+        +e.IFRAME.video(src="https://www.youtube.com/embed/M80FTIcEgZM" frameborder="0" allowfullscreen)
+        

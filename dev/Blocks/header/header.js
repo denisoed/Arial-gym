@@ -13,3 +13,12 @@ $('.btn-menu').on('click', function(){
 
   $('.btn-menu').toggleClass('btn-menu-active');
 });
+
+// Fixed main menu
+(function() {
+
+    if ($(window).width() > 992) {
+        $(".main-menu").sticky({ zIndex: 10 });
+    }
+
+})();
