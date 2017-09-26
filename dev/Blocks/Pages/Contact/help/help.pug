@@ -1,0 +1,16 @@
+include ../../../Shortcodes/Section-title/section-title
+include ../../../Shortcodes/Main-button/main-button
+
+mixin help()
+  +b.SECTION.help
+    +section-title('Can i help you?')
+    +e.DIV.container
+      +b.FORM.help-form(method="#", action="#")
+        +e.DIV.form-group
+          +e.INPUT(type="text", placeholder="Your name")
+          +e.INPUT(type="text", placeholder="Your email")
+          +e.INPUT(type="text", placeholder="Your subject")
+          +e.INPUT(type="text", placeholder="Your website")
+        +e.TEXTAREA(placeholder="Your message gores here")
+        +main-button('Send now')
+      

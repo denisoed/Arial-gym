@@ -1,0 +1,30 @@
+.questions
+  padding: 50px 0
+  &__container
+    +container()
+.list-questions
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+.question
+  width: 320px
+  margin-bottom: 30px
+  &__title
+    display: flex
+    cursor: pointer
+    .fa
+      margin-right: 8px
+      color: $accent
+      font-size: 18px
+    h3
+      color: $white
+      font-size: 18px
+      font-family: $Segoe-bold
+  &__text
+    display: none
+    p
+      color: $accent
+      font-size: 16px
+      font-family: $Segoe-semibold
+      padding: 10px 22px
+      box-sizing: border-box

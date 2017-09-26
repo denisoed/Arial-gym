@@ -1,0 +1,31 @@
+include ../../../Shortcodes/section-title/section-title
+
+mixin contact-us()
+  +b.SECTION.contact-us
+    +section-title('Contact Us')
+    +e.DIV.container
+      +b.DIV.map-address(id="google-map")
+        
+      +b.DIV.contact-us-info
+        +e.DIV.details
+          h4 Contact details:
+          p.
+            There are many variations of passages 
+            of Lorem Ipsum available, but the major
+            ity have suffered alteration in some 
+            form, by injected humour, or random
+            sed words.
+        +e.DIV.office-address
+          h4 Office address:
+          span 321456, Lorem ipsum dolor, USA
+        +e.DIV.phone
+          h4 Phone:
+          span +999 888 777 666
+        +e.DIV.email 
+          h4 Email:
+          span example@example.com
+        +e.DIV.fax
+          h4 Fax
+          span +38 123 00 00 002
+          
+          
