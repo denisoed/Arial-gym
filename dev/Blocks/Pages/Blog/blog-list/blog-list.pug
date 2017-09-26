@@ -1,0 +1,82 @@
+include ../../../Shortcodes/section-title/section-title
+include ../../../Shortcodes/Link-button/link-button
+
+mixin blog-list()
+  +b.SECTION.blog-list
+    +section-title("Blog List")
+    +e.DIV.container
+      +b.DIV.box
+        +b.DIV.blog-list-filter
+          +e.DIV.btn(type='button', data-filter='.all') All
+          +e.DIV.btn(type='button', data-filter='.fitness') Fitness
+          +e.DIV.btn(type='button', data-filter='.body') Body
+          +e.DIV.btn(type='button', data-filter='.gym-fitness') Gym fitness
+        +b.DIV.blog-list-items
+          
+          +b.DIV.blog-list-item(class="mix fitness all")
+            img(src="img/post.jpg", alt="Image Gallery")
+            +e.DIV.info  
+              h3 Simple post blog
+              p In ipsum diam egestas fermentum. Praesent laoreet semper lectus In ut ipsum ac diam egestas fermentum. Praesent laoreet semper lectus! 
+              +b.DIV.like_and_view
+                +e.DIV.like
+                  i.fa.fa-heart
+                  span 4  
+                +link-button("View detail")
+                  
+          +b.DIV.blog-list-item(class="mix fitness all")
+            img(src="img/post1.jpg", alt="Image Gallery")
+            +e.DIV.info  
+              h3 Simple post blog
+              p In ipsum diam egestas fermentum. Praesent laoreet semper lectus In ut ipsum ac diam egestas fermentum. Praesent laoreet semper lectus! 
+              +b.DIV.like_and_view
+                +e.DIV.like
+                  i.fa.fa-heart
+                  span 4  
+                +link-button("View detail")  
+          
+          +b.DIV.blog-list-item(class="mix gym-fitness all")
+            img(src="img/post2.jpg", alt="Image Gallery")
+            +e.DIV.info  
+              h3 Simple post blog
+              p In ipsum diam egestas fermentum. Praesent laoreet semper lectus In ut ipsum ac diam egestas fermentum. Praesent laoreet semper lectus! 
+              +b.DIV.like_and_view
+                +e.DIV.like
+                  i.fa.fa-heart
+                  span 4  
+                +link-button("View detail")  
+          
+          +b.DIV.blog-list-item(class="mix body all")
+            img(src="img/post.jpg", alt="Image Gallery")
+            +e.DIV.info  
+              h3 Simple post blog
+              p In ipsum diam egestas fermentum. Praesent laoreet semper lectus In ut ipsum ac diam egestas fermentum. Praesent laoreet semper lectus! 
+              +b.DIV.like_and_view
+                +e.DIV.like
+                  i.fa.fa-heart
+                  span 4  
+                +link-button("View detail")  
+          
+          +b.DIV.blog-list-item(class="mix body all")
+            img(src="img/post1.jpg", alt="Image Gallery")
+            +e.DIV.info  
+              h3 Simple post blog
+              p In ipsum diam egestas fermentum. Praesent laoreet semper lectus In ut ipsum ac diam egestas fermentum. Praesent laoreet semper lectus! 
+              +b.DIV.like_and_view
+                +e.DIV.like
+                  i.fa.fa-heart
+                  span 4  
+                +link-button("View detail")  
+          
+          +b.DIV.blog-list-item(class="mix gym-fitness all")
+            img(src="img/post2.jpg", alt="Image Gallery")
+            +e.DIV.info  
+              h3 Simple post blog
+              p In ipsum diam egestas fermentum. Praesent laoreet semper lectus In ut ipsum ac diam egestas fermentum. Praesent laoreet semper lectus! 
+              +b.DIV.like_and_view
+                +e.DIV.like
+                  i.fa.fa-heart
+                  span 4  
+                +link-button("View detail")  
+                  
+      +b.BUTTON.load-more load more            

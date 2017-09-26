@@ -26,6 +26,22 @@ $('.btn-menu').on('click', function(){
 
 
 
+var filterList = {
+
+init: function () {
+  $('.blog-list-items').mixItUp({
+    selectors: {
+      target: '.mix',
+      filter: '.blog-list-filter__btn'
+    },
+    load: {
+      filter: '.all'
+    }
+  });
+}
+};
+filterList.init();
+
 function initMap() {
 
     var uluru = { lat: 40.674, lng: -73.945 };
@@ -146,16 +162,6 @@ $('.question__title').on('click', (e)=> {
 
 })
 
-$('.home-slider__box').owlCarousel({
-  loop:true,
-  autoplay: true,
-  smartSpeed: 900,
-  autoplaySpeed: 1000,
-  // margin:10,
-  nav:false,
-  items:1
-});
-
 var filterList = {
 
 init: function () {
@@ -177,6 +183,16 @@ $(".colorbox").colorbox({
   rel:'colorbox',
   maxWidth:'95%',
   maxHeight:'95%'
+});
+
+$('.home-slider__box').owlCarousel({
+  loop:true,
+  autoplay: true,
+  smartSpeed: 900,
+  autoplaySpeed: 1000,
+  // margin:10,
+  nav:false,
+  items:1
 });
 
 

@@ -2,8 +2,10 @@ include contact-us/contact-us
 include help/help
 include questions/questions
 include ../../Shortcodes/We/we
+include ../../Shortcodes/Section-banner/section-banner
 
 mixin contact()
+  +section-banner("background-image: url('img/contact.jpg')", 'Contact Us', 'If you got any questions, or you just want to say hello to us. Feel free to send us a message')
   +contact-us()
   +help()
   +questions()

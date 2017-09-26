@@ -1,0 +1,84 @@
+.blog-list
+  padding: 50px 0
+  &__container
+    +container()
+.blog-list-filter
+  &__btn
+    background-color: transparent
+    border: none
+    color: $white
+    font-family: $Segoe-bold
+    font-size: 16px
+    transition: all 0.2s ease
+    cursor: pointer
+  .active
+    color: $accent
+    font-family: $Segoe-black
+    font-size: 18px
+.blog-list-items
+  display: flex
+  flex-wrap: wrap
+  margin-top: 15px
+.blog-list-item
+  width: 31%
+  margin: 1%
+  display: none
+  float: left
+  position: relative
+  box-sizing: border-box
+  background-color: $dark
+  img
+    width: 100%
+    height: auto
+    transition: all .4s ease
+  &__info
+    padding: 0 30px
+    box-sizing: border-box
+    margin-top: 15px
+    h3
+      color: $white
+      padding: 8px
+      width: 100%
+      text-align: center
+      background-color: $main-color
+      font-size: 18px
+      font-family: $Segoe-black
+      box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,1)
+      text-shadow: 2px 2px 15px rgba(0,0,0,1)
+    p
+      margin-top: 12px
+      text-align: center
+      color: $white
+      font-size: 16px
+      font-family: $Segoe-semibold
+.like_and_view
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 15px 0
+  &__like
+    .fa
+      color: $accent
+      font-size: 22px
+      margin-right: 8px
+    span
+      color: $white
+      font-size: 18px
+      font-family: $Segoe-bold
+.load-more
+  margin: 0 auto
+  background-color: $dark
+  padding: 10px 20px
+  color: $white
+  font-size: 16px
+  margin-top: 30px
+  font-family: $Segoe-black
+  transition: all 0.4s ease
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,1)
+  border: none
+  cursor: pointer
+  &:hover
+    box-shadow: 4px 4px 25px 0px rgba(0,0,0,1)
+    background-color: lighten($dark, 5%)
+    transform: rotate(-0.5deg) scale(1.03)
