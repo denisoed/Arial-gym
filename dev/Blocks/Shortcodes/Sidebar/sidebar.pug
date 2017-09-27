@@ -1,0 +1,69 @@
+mixin sidebar()
+  +b.DIV.sidebar
+    +b.FORM.sidebar-search(action="#", method="#")
+      input(type="text", placeholder="Search")
+      button(type="submit")
+        i.fa.fa-search 
+    +b.DIV.sidebar-category
+      +e.H3.title Category
+      +e.UL.list
+        +e.LI
+          +e.A(href="#") All
+        +e.LI
+          +e.A(href="#") Fitness
+        +e.LI
+          +e.A(href="#") Body
+        +e.LI
+          +e.A(href="#") Body Fitness
+        +e.LI
+          +e.A(href="#") All
+        +e.LI
+          +e.A(href="#") Fitness
+        +e.LI
+          +e.A(href="#") Body
+        +e.LI
+          +e.A(href="#") Body Fitness
+    +b.DIV.sidebar-recent-posts
+      +e.H3.title Recent Posts
+      +e.DIV.list
+        //- Item
+        +e.DIV.item
+          a(href="#") Integer ac metus mi.
+          span 11:27 - 01.01.2017
+      
+        //- Item
+        +e.DIV.item
+          a(href="#") Donec pretium.
+          span 09:11 - 01.01.2017
+      
+        //- Item
+        +e.DIV.item
+          a(href="#") Nulla ac semper urna.
+          span 09:05 - 01.01.2017
+      
+        //- Item
+        +e.DIV.item
+          a(href="#") Sed tincidunt, eros sed feugiat.
+          span 08:34 - 01.01.2017
+    
+    +b.DIV.tags
+      +e.H3.title Tags
+      +e.DIV.list
+        +e.DIV.tag
+          a(href="#") Exersice
+        +e.DIV.tag
+          a(href="#") Fat
+        +e.DIV.tag
+          a(href="#") Body
+        +e.DIV.tag
+          a(href="#") Body
+        +e.DIV.tag
+          a(href="#") Fat
+        +e.DIV.tag
+          a(href="#") Exersice  
+        +e.DIV.tag
+          a(href="#") Exersice
+        +e.DIV.tag
+          a(href="#") Fat
+        +e.DIV.tag
+          a(href="#") Body

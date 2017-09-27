@@ -1,0 +1,105 @@
+.post
+  padding: 50px 0
+  &__container
+    +container()
+.post-content
+  +col(9)
+  &__image
+    width: 100%
+    margin-bottom: 30px
+  &__title
+    font-size: 22px
+    color: $accent
+    font-family: $Segoe-black
+    text-transform: uppercase
+    margin-bottom: 20px
+  &__text
+    color: $white
+    font-size: 15px
+    font-family: $Segoe-semibold
+    margin-bottom: 20px
+
+.post-info
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  background-color: $dark
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,1)
+  margin-bottom: 20px
+  padding: 8px 15px
+  &__author_and_date
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    h5
+      color: $white
+      font-size: 14px
+      font-family: $Segoe-bold
+      span
+        margin-right: 15px
+        color: $accent
+        font-size: 16px
+        text-transform: uppercase
+    span
+      color: $white
+      font-size: 14px
+      font-family: $Segoe-bold
+  &__comments
+    display: flex
+    align-items: center
+    span
+      margin-right: 5px
+      color: $accent
+      font-size: 16px
+      font-family: $Segoe-black
+      text-transform: uppercase
+    p
+      color: $white
+      font-size: 14px
+      font-family: $Segoe-bold
+.leave-comments
+  margin-bottom: 30px
+  h4
+    margin-right: 15px
+    color: $accent
+    font-size: 16px
+    text-transform: uppercase
+    font-family: $Segoe-black
+.post-form
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  textarea
+    width: 100%
+    height: 200px
+    color: $white
+    font-family: $Segoe-semibold
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,1)
+    background-color: $main-color
+    padding: 15px
+    box-sizing: border-box
+    border: none
+    margin-bottom: 15px
+    &::placeholder
+      color: $white
+  &__group
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    input
+      width: 49%
+      margin-bottom: 18px
+      background-color: $main-color
+      border: none
+      padding: 15px
+      box-sizing: border-box
+      color: $white
+      font-family: $Segoe-semibold
+      box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,1)
+      &::placeholder
+        color: $white
+.post-sidebar
+  +col(3)

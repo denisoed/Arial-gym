@@ -1,0 +1,9 @@
+include ../../Shortcodes/Section-banner/section-banner
+include ../../Shortcodes/We/we
+include post/post
+
+mixin blog-detail()
+  +section-banner("background-image: url('img/blog.jpg')", 'Fitness Blog', 'Fitness, Gyms & Personal Trainers.')
+  +post()
+  +we()
+  

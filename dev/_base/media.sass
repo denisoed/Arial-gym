@@ -64,7 +64,27 @@
 					margin: 15px
 					box-shadow: 0px 0px 10px 0px rgba(0,0,0,1)
 	.blog-list-item
-		width: 100%				
+		width: 100%
+
+	.post
+		&__container
+			display: flex
+			flex-direction: column-reverse
+		.post-content
+			+col(12)
+		.post-sidebar
+			+col(12)
+			.sidebar
+				.sidebar-category
+					&__list
+						display: flex
+						flex-wrap: wrap
+						li
+							margin-right: 15px
+				.sidebar-recent-posts
+					&__list
+						display: flex
+						flex-wrap: wrap
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	header
