@@ -1,6 +1,16 @@
 include ../../Shortcodes/Section-banner/section-banner
 include ../../Shortcodes/We/we
+include ../../Shortcodes/Subscribe/subscribe
+include features/features
+include services/services
+include about-us/about-us
+include who-we/who-we
 
 mixin about-us()
-  +section-banner("background-image: url('img/img2.jpg')", 'About Us', 'Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin, ')
+  +section-banner("background-image: url('img/about-bg.jpeg')", 'About Us')
+  +who-we()
+  +about-us-block()
+  +about-services()
+  +subscribe()
+  +features()
   +we()

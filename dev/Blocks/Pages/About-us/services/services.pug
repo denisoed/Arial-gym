@@ -1,10 +1,9 @@
-include ../../../../Shortcodes/Section-title/section-title
+include ../../../Shortcodes/Section-title/section-title
 
-mixin services()
-  +b.SECTION.services
+mixin about-services()
+  +b.SECTION.about-services
     +section-title("Services")
-    +e.DIV.container 
-    
+    +e.DIV.container
       //- Service
       +b.DIV.service
         h4 Personal Training
@@ -44,4 +43,3 @@ mixin services()
       +b.DIV.service
         h4 Physical therapy
         p In ut ipsum ac diam egestas fermentum. Praesent laoreet semper lectus!
-    
