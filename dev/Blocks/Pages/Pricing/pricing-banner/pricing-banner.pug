@@ -1,0 +1,10 @@
+include ../../../Shortcodes/Link-button/link-button
+
+mixin pricing-banner()
+  +b.DIV.pricing-banner(style="background-image: url('img/pricing-bg.jpeg')")
+    +e.DIV.container
+      +b.DIV.pricing-banner-info
+        +e.H1.title We have the best prices
+        +e.P.text Free 30 days trial
+        +link-button('Get it try now')  
+      

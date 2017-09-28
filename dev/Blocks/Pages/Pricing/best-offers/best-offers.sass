@@ -1,0 +1,36 @@
+.best-offers
+  padding: 50px 0
+  &__container
+    +container()
+  &__list
+    display: flex
+    justify-content: space-around
+.offer
+  width: 31%
+  height: 250px
+  background-position: center
+  background-size: cover
+  box-shadow: 2px 2px 15px rgba(0,0,0, 1)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  transition: all .4s ease
+  &:hover
+    transform: rotate(-2deg) scale(1.04)
+    box-shadow: 2px 2px 35px rgba(0,0,0, 1)
+  &__title
+    color: $accent
+    font-size: 18px
+    font-family: $Segoe-black
+    text-transform: uppercase
+    text-shadow: 0px 0px 15px rgba(0,0,0, 1)
+    margin-bottom: 15px
+  &__text
+    color: $white
+    font-size: 16px
+    font-family: $Segoe-semibold
+    padding: 0 30px
+    box-sizing: border-box
+    text-shadow: 0px 0px 15px rgba(0,0,0, 1)
+    text-align: center

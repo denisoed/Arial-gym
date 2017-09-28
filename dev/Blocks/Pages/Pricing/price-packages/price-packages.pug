@@ -1,0 +1,50 @@
+include ../../../Shortcodes/Link-button/link-button
+include ../../../Shortcodes/Section-title/section-title
+
+mixin price-packages()
+  +b.SECTION.price-packages
+    +section-title('Price Packages')
+    +e.DIV.container
+      +e.DIV.list
+      
+        //- Package
+        +b.DIV.price-package
+          +e.H4.rate Standart
+          +e.DIV.price
+            h4 30#[span $]
+            p /mo
+          +e.UL.capabilities
+            li Access To All Gym Facilities
+            li Free Parking Pass
+            li Monday-Friday Gym Access
+            li 3 Day Personal Trainer Help
+            li No Additional Amenities
+          +link-button('Join now')    
+      
+        //- Package
+        +b.DIV.price-package(class="average")
+          +e.H4.rate Average
+          +e.DIV.price
+            h4 50#[span $]
+            p /mo
+          +e.UL.capabilities
+            li Access To All Gym Facilities
+            li Free Parking Pass
+            li Monday-Friday Gym Access
+            li 3 Day Personal Trainer Help
+            li No Additional Amenities
+          +link-button('Join now')    
+      
+        //- Package
+        +b.DIV.price-package
+          +e.H4.rate Premium
+          +e.DIV.price
+            h4 80#[span $]
+            p /mo
+          +e.UL.capabilities
+            li Access To All Gym Facilities
+            li Free Parking Pass
+            li Monday-Friday Gym Access
+            li 3 Day Personal Trainer Help
+            li No Additional Amenities
+          +link-button('Join now')    

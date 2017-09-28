@@ -163,6 +163,7 @@ $('.question__title').on('click', (e)=> {
 
 })
 
+
 $('.home-slider__box').owlCarousel({
   loop:true,
   autoplay: true,
