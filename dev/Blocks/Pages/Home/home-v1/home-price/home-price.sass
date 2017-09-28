@@ -1,0 +1,90 @@
+.home-price
+  padding: 50px 0
+  background-color: $dark
+  &__container
+    +container()
+  &__content
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    position: relative
+.discount
+  position: absolute
+  top: 50%
+  left: 100px
+  transform: translateY(-50%)
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  &__sale
+    color: $accent
+    font-size: 82px
+    font-family: $Segoe-black
+    text-shadow: 1px 2px 15px rgba(0,0,0, 1)
+  &__title
+    color: $white
+    font-size: 52px
+    font-family: $Segoe-bold
+    text-shadow: 1px 2px 15px rgba(0,0,0, 1)
+    margin-bottom: 30px
+.home-price-item
+  width: 250px
+  background-color: $accent
+  padding: 30px
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  box-shadow: 1px 2px 15px rgba(0,0,0, 1)
+  transition: all .4s ease
+  &:hover
+    transform: translateX(-50px) rotate(-2deg)
+  &__title
+    color: $dark
+    font-size: 22px
+    font-family: $Segoe-black
+    text-transform: uppercase
+    margin-bottom: 10px
+  &__price
+    display: flex
+    align-items: flex-end
+    margin-bottom: 50px
+    h4
+      font-size: 42px
+      font-family: $Segoe-bold
+      color: $dark
+      span
+        font-size: 22px
+        vertical-align: top
+    p
+      color: $dark
+      font-family: $Segoe-bold
+  &__text
+    text-align: center
+    color: $dark
+    font-size: 16px
+    font-family: $Segoe-semibold
+    margin-bottom: 70px
+  &__join
+    color: $dark
+    font-size: 18px
+    font-family: $Segoe-black
+    transition: all .4s ease
+    border: 2px solid $dark
+    padding: 8px 15px
+    &:hover
+      transform: scale(1.03) rotate(-2deg)
+      box-shadow: 1px 2px 10px rgba(0,0,0, 1)
+.home-price-standart
+  background-color: darken($accent, 10%)
+  margin-right: -50px
+  z-index: 1
+  margin-bottom: -30px
+.home-price-average
+  background-color: darken($accent, 5%)
+  margin-right: -50px
+  z-index: 2
+  margin-bottom: -15px
+.home-price-premium
+  z-index: 3

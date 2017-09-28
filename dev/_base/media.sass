@@ -105,6 +105,23 @@
 	.offer
 		width: 80%
 		margin-bottom: 30px
+
+	// Plus services
+	.plus-service
+		+col(6)
+		margin-bottom: 15px
+
+	// Home price
+	.home-price-item
+	  width: 150px
+	  padding: 15px
+
+	.discount
+		left: 0
+
+	// Our team
+	.trainer
+		+col(6)
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	header
@@ -149,6 +166,21 @@
 	.about-us-block-img
 		margin-bottom: 30px
 		+col(12)
+
+	// Plus services
+	.plus-service
+		+col(12)
+
+	// Home price
+	.home-price__content
+		justify-content: center
+
+	.discount
+		display: none
+
+	// Our team
+	.trainer
+		+col(12) 	
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	.slider-slide
@@ -170,6 +202,16 @@
 	.help-form
 		input
 			width: 100%
+
+	// Home price
+	.home-price__content
+		flex-direction: column
+	.home-price-item
+		width: 250px
+		margin: 0
+		margin-bottom: 15px
+		&:hover
+			transform: none
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

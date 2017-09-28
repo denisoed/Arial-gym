@@ -5,9 +5,13 @@ include home-v1/img-gallery/img-gallery
 include home-v1/posts/posts
 include ../../Shortcodes/Subscribe/subscribe
 include ../../Shortcodes/We/we
+include home-v1/home-price/home-price
+include home-v1/plus-services/plus-services
 
 mixin Home()
   +home-slider()
+  +plus-services()
+  +home-price()
   +services()
   +video-tour()
   +img-gallery()

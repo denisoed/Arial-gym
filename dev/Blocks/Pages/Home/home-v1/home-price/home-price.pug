@@ -1,0 +1,39 @@
+include ../../../../Shortcodes/Link-button/link-button
+
+mixin home-price()
+  +b.SECTION.home-price
+    +e.DIV.container
+      +e.DIV.content
+        
+        +b.DIV.discount
+          +e.SPAN.sale 25%
+          +e.H3.title Discount
+          +link-button('Pay Now')
+          
+        
+        //- Item
+        +b.DIV.home-price-item(class="home-price-standart")
+          +e.DIV.title Standart
+          +e.DIV.price
+            h4 30#[span $]
+            p /mo
+          +e.P.text Lorem ipsum dolor sit amet, quod duis mea no. Graece debitis lobortis mea ut, et detracto indoctum principes mea.
+          +e.A.join(href="#") Join now
+          
+        //- Item
+        +b.DIV.home-price-item(class="home-price-average")
+          +e.DIV.title Average
+          +e.DIV.price
+            h4 50#[span $]
+            p /mo
+          +e.P.text Lorem ipsum dolor sit amet, quod duis mea no. Graece debitis lobortis mea ut, et detracto indoctum principes mea.
+          +e.A.join(href="#") Join now
+          
+        //- Item
+        +b.DIV.home-price-item(class="home-price-premium")
+          +e.DIV.title Premium
+          +e.DIV.price
+            h4 80#[span $]
+            p /mo
+          +e.P.text Lorem ipsum dolor sit amet, quod duis mea no. Graece debitis lobortis mea ut, et detracto indoctum principes mea.
+          +e.A.join(href="#") Join now
