@@ -103,7 +103,7 @@ p {
   src: url("../fonts/SegoeUI/SegoeUIItalic/SegoeUIItalic.eot");
   src: url("../fonts/SegoeUI/SegoeUIItalic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUI/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUI/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype"); }
 
-.subscribe__container, .we__container, .top-line__container, .main-menu__container, .services__container, .video-tour__container, .img-gallery__container, .posts__container, .home-price__container, .plus-services__container, .contact-us__container, .help__container, .questions__container, .about-us-block__container, .features__container, .about-services__container, .who-we__container, .blog-list__container, .price-packages__container, .best-offers__container, .offers-ever__container, .post__container, .our-team__container, .footer__container {
+.subscribe__container, .we__container, .top-line__container, .main-menu__container, .services__container, .video-tour__container, .img-gallery__container, .posts__container, .home-price__container, .plus-services__container, .contact-us__container, .help__container, .questions__container, .about-us-block__container, .features__container, .about-services__container, .who-we__container, .blog-list__container, .price-packages__container, .best-offers__container, .offers-ever__container, .post__container, .our-team__container, .trainer-detail__container, .footer__container {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -112,17 +112,17 @@ p {
   display: -ms-flexbox;
   display: flex; }
   @media (min-width: 320px) {
-    .subscribe__container, .we__container, .top-line__container, .main-menu__container, .services__container, .video-tour__container, .img-gallery__container, .posts__container, .home-price__container, .plus-services__container, .contact-us__container, .help__container, .questions__container, .about-us-block__container, .features__container, .about-services__container, .who-we__container, .blog-list__container, .price-packages__container, .best-offers__container, .offers-ever__container, .post__container, .our-team__container, .footer__container {
+    .subscribe__container, .we__container, .top-line__container, .main-menu__container, .services__container, .video-tour__container, .img-gallery__container, .posts__container, .home-price__container, .plus-services__container, .contact-us__container, .help__container, .questions__container, .about-us-block__container, .features__container, .about-services__container, .who-we__container, .blog-list__container, .price-packages__container, .best-offers__container, .offers-ever__container, .post__container, .our-team__container, .trainer-detail__container, .footer__container {
       width: 100%;
       padding: 0 15px; } }
   @media (min-width: 768px) {
-    .subscribe__container, .we__container, .top-line__container, .main-menu__container, .services__container, .video-tour__container, .img-gallery__container, .posts__container, .home-price__container, .plus-services__container, .contact-us__container, .help__container, .questions__container, .about-us-block__container, .features__container, .about-services__container, .who-we__container, .blog-list__container, .price-packages__container, .best-offers__container, .offers-ever__container, .post__container, .our-team__container, .footer__container {
+    .subscribe__container, .we__container, .top-line__container, .main-menu__container, .services__container, .video-tour__container, .img-gallery__container, .posts__container, .home-price__container, .plus-services__container, .contact-us__container, .help__container, .questions__container, .about-us-block__container, .features__container, .about-services__container, .who-we__container, .blog-list__container, .price-packages__container, .best-offers__container, .offers-ever__container, .post__container, .our-team__container, .trainer-detail__container, .footer__container {
       width: 750px; } }
   @media (min-width: 992px) {
-    .subscribe__container, .we__container, .top-line__container, .main-menu__container, .services__container, .video-tour__container, .img-gallery__container, .posts__container, .home-price__container, .plus-services__container, .contact-us__container, .help__container, .questions__container, .about-us-block__container, .features__container, .about-services__container, .who-we__container, .blog-list__container, .price-packages__container, .best-offers__container, .offers-ever__container, .post__container, .our-team__container, .footer__container {
+    .subscribe__container, .we__container, .top-line__container, .main-menu__container, .services__container, .video-tour__container, .img-gallery__container, .posts__container, .home-price__container, .plus-services__container, .contact-us__container, .help__container, .questions__container, .about-us-block__container, .features__container, .about-services__container, .who-we__container, .blog-list__container, .price-packages__container, .best-offers__container, .offers-ever__container, .post__container, .our-team__container, .trainer-detail__container, .footer__container {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .subscribe__container, .we__container, .top-line__container, .main-menu__container, .services__container, .video-tour__container, .img-gallery__container, .posts__container, .home-price__container, .plus-services__container, .contact-us__container, .help__container, .questions__container, .about-us-block__container, .features__container, .about-services__container, .who-we__container, .blog-list__container, .price-packages__container, .best-offers__container, .offers-ever__container, .post__container, .our-team__container, .footer__container {
+    .subscribe__container, .we__container, .top-line__container, .main-menu__container, .services__container, .video-tour__container, .img-gallery__container, .posts__container, .home-price__container, .plus-services__container, .contact-us__container, .help__container, .questions__container, .about-us-block__container, .features__container, .about-services__container, .who-we__container, .blog-list__container, .price-packages__container, .best-offers__container, .offers-ever__container, .post__container, .our-team__container, .trainer-detail__container, .footer__container {
       width: 1170px; } }
 
 /*!
@@ -3868,7 +3868,9 @@ p {
 
 .home-price {
   padding: 50px 0;
-  background-color: #1b1926; }
+  background-color: #1b1926;
+  -webkit-box-shadow: 0px 0px 15px 0px black;
+          box-shadow: 0px 0px 15px 0px black; }
   .home-price__container {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -5108,6 +5110,142 @@ p {
     text-align: center;
     margin-bottom: 15px; }
 
+.trainer-detail {
+  padding: 50px 0; }
+  .trainer-detail__container {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+
+.trainer-info {
+  width: -webkit-calc( (((100% - (40px * (12 - 1))) / 12) * 6) + ( 40px * (6 - 1)));
+  width: calc( (((100% - (40px * (12 - 1))) / 12) * 6) + ( 40px * (6 - 1))); }
+  .trainer-info__img_and_contact {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-bottom: 30px; }
+  .trainer-info__img {
+    width: 380px;
+    height: 210px;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    margin-right: 15px; }
+  .trainer-info__contact {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .trainer-info__contact h4 {
+      color: #f4f6f8;
+      font-size: 26px;
+      text-transform: uppercase;
+      font-family: "Segoe-black", sans-serif;
+      margin-bottom: 8px; }
+    .trainer-info__contact p {
+      color: #c8c03a;
+      font-size: 14px;
+      font-family: "Segoe-black", sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 15px; }
+    .trainer-info__contact span {
+      color: #f4f6f8;
+      font-size: 14px;
+      font-family: "Segoe-semibold", sans-serif;
+      margin: 4px 0; }
+  .trainer-info__social-icons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px; }
+    .trainer-info__social-icons a:hover .fa {
+      color: #f4f6f8; }
+    .trainer-info__social-icons .fa {
+      -webkit-transition: all .4s ease;
+      -o-transition: all .4s ease;
+      transition: all .4s ease;
+      color: #c8c03a;
+      font-size: 18px;
+      margin: 0 8px; }
+  .trainer-info__about-me h3 {
+    color: #c8c03a;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: "Segoe-black", sans-serif;
+    margin-bottom: 15px; }
+  .trainer-info__about-me p {
+    color: #f4f6f8;
+    font-size: 14px;
+    font-family: "Segoe-semibold", sans-serif; }
+  .trainer-info__specialization {
+    margin-top: 30px; }
+    .trainer-info__specialization h3 {
+      color: #c8c03a;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-family: "Segoe-black", sans-serif;
+      margin-bottom: 15px; }
+    .trainer-info__specialization ul {
+      padding: 0 20px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .trainer-info__specialization ul li {
+        color: #f4f6f8;
+        font-size: 16px;
+        font-family: "Segoe-semibold", sans-serif;
+        list-style: circle;
+        margin-bottom: 8px; }
+  .trainer-info__experiens {
+    margin-top: 30px; }
+    .trainer-info__experiens h3 {
+      color: #c8c03a;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-family: "Segoe-black", sans-serif;
+      margin-bottom: 15px; }
+    .trainer-info__experiens ul {
+      padding: 0 20px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .trainer-info__experiens ul li {
+        color: #f4f6f8;
+        font-size: 16px;
+        font-family: "Segoe-semibold", sans-serif;
+        list-style: circle;
+        margin-bottom: 8px; }
+
+.trainer-video {
+  width: -webkit-calc( (((100% - (40px * (12 - 1))) / 12) * 6) + ( 40px * (6 - 1)));
+  width: calc( (((100% - (40px * (12 - 1))) / 12) * 6) + ( 40px * (6 - 1))); }
+  .trainer-video__video {
+    -webkit-box-shadow: 2px 2px 25px black;
+            box-shadow: 2px 2px 25px black;
+    width: 100%;
+    height: 340px; }
+
 .footer__container {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -5429,6 +5567,13 @@ p {
   .discount {
     display: none; }
   .trainer {
+    width: -webkit-calc( (((100% - (40px * (12 - 1))) / 12) * 12) + ( 40px * (12 - 1)));
+    width: calc( (((100% - (40px * (12 - 1))) / 12) * 12) + ( 40px * (12 - 1))); }
+  .trainer-info {
+    width: -webkit-calc( (((100% - (40px * (12 - 1))) / 12) * 12) + ( 40px * (12 - 1)));
+    width: calc( (((100% - (40px * (12 - 1))) / 12) * 12) + ( 40px * (12 - 1)));
+    margin-bottom: 30px; }
+  .trainer-video {
     width: -webkit-calc( (((100% - (40px * (12 - 1))) / 12) * 12) + ( 40px * (12 - 1)));
     width: calc( (((100% - (40px * (12 - 1))) / 12) * 12) + ( 40px * (12 - 1))); } }
 

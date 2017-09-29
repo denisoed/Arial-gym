@@ -1,0 +1,40 @@
+mixin trainer()
+  +b.SECTION.trainer-detail
+    +e.DIV.container
+    
+      +b.DIV.trainer-info
+        +e.DIV.img_and_contact
+          +e.DIV.img(style="background-image: url('img/trainer.jpg')")
+          +e.DIV.contact
+            h4 John Doe
+            p Gym instructor
+            span +999 888 777 666
+            span example@example.com 
+            +e.DIV.social-icons
+              a(href="#")
+                i.fa.fa-facebook
+              a(href="#")
+                i.fa.fa-twitter
+              a(href="#")
+                i.fa.fa-instagram
+        +e.DIV.about-me
+          h3 About me
+          p Sed ut perspiciatis un de omnis iste. voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore v eritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste. voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore v eritatis et quasi architecto beatae vitae dicta sunt explicabo. Illo inventore v eritatis et quasi architecto beatae vitae dicta sun   explicabo. <br><br>Voluptatem accusantium doloremque laudantium, totam rem inventore aperiam, eaque ipsa quae ab illo inventore v eritatis et quasi architecto beatae vitae dictasunt explicabo. Illo inventore v eritatis et quasi architecto beatae vitae.
+        +e.DIV.specialization
+          h3 Specialization
+          ul
+            li totam rem inventore
+            li eritatis et quasi
+            li et quasi 
+            li eaque ipsa quae ab illo inventore v eritatis
+            li Sed ut perspiciatis 
+        +e.DIV.experiens
+          h3 Experiens
+          ul
+            li totam rem inventore
+            li eritatis et quasi
+            li et quasi 
+            li eaque ipsa quae ab illo inventore v eritatis
+            li Sed ut perspiciatis 
+      +b.DIV.trainer-video
+        +e.IFRAME.video(src="https://www.youtube.com/embed/M80FTIcEgZM" frameborder="0" allowfullscreen)

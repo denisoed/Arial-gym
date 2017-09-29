@@ -1,0 +1,101 @@
+.trainer-detail
+  padding: 50px 0
+  &__container
+    +container()
+.trainer-info
+  +col(6)
+  &__img_and_contact
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 30px
+  &__img
+    width: 380px
+    height: 210px
+    background-position: center
+    background-size: cover
+    margin-right: 15px
+  &__contact
+    display: flex
+    flex-direction: column
+    justify-content: center
+    h4
+      color: $white
+      font-size: 26px
+      text-transform: uppercase
+      font-family: $Segoe-black
+      margin-bottom: 8px
+    p
+      color: $accent
+      font-size: 14px
+      font-family: $Segoe-black
+      text-transform: uppercase
+      margin-bottom: 15px
+    span
+      color: $white
+      font-size: 14px
+      font-family: $Segoe-semibold
+      margin: 4px 0
+  &__social-icons
+    display: flex
+    margin-top: 30px
+    a
+      &:hover
+        .fa
+          color: $white
+    .fa
+      transition: all .4s ease
+      color: $accent
+      font-size: 18px
+      margin: 0 8px
+  &__about-me
+    h3
+      color: $accent
+      font-size: 22px
+      text-transform: uppercase
+      font-family: $Segoe-black
+      margin-bottom: 15px
+    p
+      color: $white
+      font-size: 14px
+      font-family: $Segoe-semibold
+  &__specialization
+    margin-top: 30px
+    h3
+      color: $accent
+      font-size: 22px
+      text-transform: uppercase
+      font-family: $Segoe-black
+      margin-bottom: 15px
+    ul
+      padding: 0 20px
+      box-sizing: border-box
+      li
+        color: $white
+        font-size: 16px
+        font-family: $Segoe-semibold
+        list-style: circle
+        margin-bottom: 8px
+  &__experiens
+    margin-top: 30px
+    h3
+      color: $accent
+      font-size: 22px
+      text-transform: uppercase
+      font-family: $Segoe-black
+      margin-bottom: 15px
+    ul
+      padding: 0 20px
+      box-sizing: border-box
+      li
+        color: $white
+        font-size: 16px
+        font-family: $Segoe-semibold
+        list-style: circle
+        margin-bottom: 8px
+.trainer-video
+  +col(6)
+  &__video
+    box-shadow: 2px 2px 25px rgba(0,0,0, 1)
+    width: 100%
+    height: 340px
