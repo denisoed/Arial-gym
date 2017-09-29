@@ -4,6 +4,7 @@ include _assets/bemto/bemto
 include Blocks/head/head
 include Blocks/header/header-v1/header-v1
 include Blocks/footer/footer
+include Blocks/Shortcodes/Preloader/preloader
 
 doctype html
 html(lang="en")
@@ -19,10 +20,11 @@ html(lang="en")
 		+b.BODY.page(style="background-image: url('img/body-bg.jpg')")
 			+e.DIV.wrap
 				block header
+					+preloader()
 					+header-v1()
 					
 				block content
-
+					
 				block footer
 					+footer()
 			block vendors
@@ -32,6 +34,7 @@ html(lang="en")
 				script( src="libs/jquery.mixitup/jquery.mixitup.min.js")
 				script( src="libs/colorbox-master/jquery.colorbox-min.js")
 				script( src="libs/jquery.sticky/jquery.sticky.js")
+				script( src="libs/Parallax/paraxify.js")
 				// endbuild
 				script( src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-VAPLiH0Yb_wqRN7yiT_lvHljLQfNG8Q&callback=initMap" async defer )
 					
